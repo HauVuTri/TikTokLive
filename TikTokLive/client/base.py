@@ -484,7 +484,7 @@ class BaseClient(AsyncIOEventEmitter):
         """
 
         self.loop.run_until_complete(self._connect(session_id=session_id))
-        self.loop.run_forever()
+        # self.loop.run_forever()
 
     def __set_session_id(self, session_id: Optional[str]) -> None:
         """
